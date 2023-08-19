@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+}
+
+.title {
+  font-size: 22px;
+}
+
+.formContainer {
+  display: flex;
+  flex-flow: column;
+}
+
+.prompt {
+  position: relative;
+  margin: 30px 0 0;
+}
+
+.promptInput {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 10px;
+  font-size: 15px;
+  color: #333;
+  background: #fff;
+  border: 1px solid #aaa;
+  border-radius: 0;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.promptInput:placeholder-shown + .promptLabel {
+  display: inline;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  font-size: 15px;
+  line-height: 1;
+  color: #aaa;
+  cursor: text;
+  transition: all 0.2s;
+}
+
+.promptInput:focus + .promptLabel {
+  top: -1.5em;
+}
+
+.promptLabel {
+  display: inline;
+  position: absolute;
+  top: -1.5em;
+  left: 10px;
+  font-size: 15px;
+  line-height: 1;
+  color: #aaa;
+}
+
+.errorMsg {
+  color: #f44336;
+}
+
+.startBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px;
+  margin: 40px 30px 0 30px;
+  padding: 8px 50px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  overflow-wrap: anywhere;
+  background-color: #6fa24a;
+  border-radius: 32px; /* (buttonの高さ / 2) の値 */
+
+  &:hover {
+    background-color: #54802f;
+    transition: 0.2s;
+  }
+}
+
+.backbtn {
+  margin-top: 20px;
+}

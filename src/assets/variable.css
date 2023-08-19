@@ -1,0 +1,31 @@
+:root {
+  /* 色 */
+  /* 背景色 */
+  --color-bg-base: #fff;
+  --color-bg-main: #fff;
+  --color-bg-accent: #fff;
+  --color-bg-sub: #fff;
+  /* 文字色 */
+  --color-text-base: #fff;
+  --color-text-main: #fff;
+  --color-text-accent: #fff;
+  --color-text-sub: #fff;
+  /* 枠線 */
+  --color-border-commmon: #fff;
+  --color-border-err: #fff;
+  --color-border-editArea: #fff;
+
+  /* サイズ */
+  /* 余白 */
+  --size-margin-short: 16px;
+  --size-margin-medium: 20px;
+  --size-margin-wide: 40px;
+  /* フォントサイズ */
+  --size-font-minimum: 12px;
+  --size-font-small: 14px;
+  --size-font-normal: 16px;
+  --size-font-big: 18px;
+  --size-font-huge: 20px;
+
+  --size-font-title: 22px;
+}
