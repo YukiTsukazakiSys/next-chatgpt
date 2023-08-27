@@ -6,14 +6,26 @@ import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { Message } from './types/custom';
 import { useRecoilValue } from 'recoil';
-import { promptMsgAtom } from '@/atom/countAtom';
+import {
+  frequencyPenaltyAtom,
+  maxTokensAtom,
+  presencePenaltyAtom,
+  promptMsgAtom,
+  temperatureAtom,
+  topPAtom,
+} from '@/atom';
 import { defaultPrompt } from '@/constants/constants';
 import Chat from '@/components/chatBody';
 import ThreeDotsLoader from '@/components/loader/ThreeDotsLoader';
 import InputForm from '@/components/inputForm/InputForm';
 
 const Home: NextPage = () => {
+  const frequency_penalty: number = useRecoilValue(frequencyPenaltyAtom);
+  const max_tokens: number = useRecoilValue(maxTokensAtom);
+  const presence_penalty: number = useRecoilValue(presencePenaltyAtom);
   const promptMsg: string = useRecoilValue(promptMsgAtom);
+  const temperature: number = useRecoilValue(temperatureAtom);
+  const top_p: number = useRecoilValue(topPAtom);
   const [chats, setChats] = useState<Message[]>([
     {
       role: 'system',
@@ -37,6 +49,13 @@ const Home: NextPage = () => {
             role: d.role,
             content: d.content,
           })),
+          otherOption: {
+            frequency_penalty,
+            max_tokens,
+            presence_penalty,
+            temperature,
+            top_p,
+          },
         }),
       });
 

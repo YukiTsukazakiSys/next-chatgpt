@@ -1,13 +1,11 @@
-// TODO: git hub にアップロードする
-// TODO: vercelにあげる？（openaiの利用料金が怖いのでやらないかも）
-// TODO: variable.css に色やフォントサイズの定義をして活用する
-// TODO: 設定できる項目数を増やす（apiのオプションをユーザが変更できるようにする）
+// TODO: コンポーネント分割したい
+// TODO: css は全部tailwindで書き直したいかも
+// TODO: ログイン設定つけて、chatGPTと会話できるようにする（API Keyの配置どうする？）
 // TODO: PageRouterをAppRouterで書き換える
 // TODO: app/chat/page.tsx を自作する（componentsフォルダ含む）
 // TODO: chatgptのver.4のAPIも試してみたい！（お金めちゃかかるならやらない）
 
 import '@/assets/globals.css';
-import '@/assets/variable.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import AppProvider from './provider';
