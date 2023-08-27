@@ -1,5 +1,6 @@
 // TODO: コンポーネント分割したい
-// TODO: css は全部tailwindで書き直したいかも
+// TODO: zodを使ってバリデーションチェックしたい
+// TODO: storybookを作りたい
 // TODO: ログイン設定つけて、chatGPTと会話できるようにする（API Keyの配置どうする？）
 // TODO: PageRouterをAppRouterで書き換える
 // TODO: app/chat/page.tsx を自作する（componentsフォルダ含む）
