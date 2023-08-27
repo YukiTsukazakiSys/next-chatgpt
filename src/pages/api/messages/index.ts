@@ -19,13 +19,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   const message = req.body.message;
+  const otherOption = req.body.otherOption;
 
   try {
     const completion = await openai.createChatCompletion({
       model: 'gpt-3.5-turbo',
       messages: message,
-      temperature: 0.9,
-      max_tokens: 100,
+      ...otherOption,
     });
     res.status(200).json({ result: completion.data.choices[0].message });
   } catch (error: any) {
