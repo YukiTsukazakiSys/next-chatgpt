@@ -1,6 +1,7 @@
 // TODO: コンポーネント分割したい
 // TODO: zodを使ってバリデーションチェックしたい
 // TODO: storybookを作りたい
+// TODO: hygenを使ってみたい
 // TODO: ログイン設定つけて、chatGPTと会話できるようにする（API Keyの配置どうする？）
 // TODO: PageRouterをAppRouterで書き換える
 // TODO: app/chat/page.tsx を自作する（componentsフォルダ含む）
